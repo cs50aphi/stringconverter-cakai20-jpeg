@@ -34,7 +34,19 @@ public class StringConverter
         
         public static String pigLatinate(String str)
         {
+            englishWord = str;
             
+            englishWord.toLowerCase();
+            
+            for (int i = 0, n = englishWord.size(); i < n; i++)
+            {
+                
+                if (englishWord.contains("a")||englishWord.contains("e")englishWord.contains("i")||englishWord.contains("o")||englishWord.contains("u"))
+                {
+                    
+                }
+                
+            }
         }
         
         public static String shorthand(String str)

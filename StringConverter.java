@@ -63,10 +63,16 @@ public class StringConverter
         {
             shortStr = str;
             shortStr.toLowerCase();
+             
+            shortStr.replace(" you " , " U ");
+            shortStr.replace(" for " , " 4 ");
+            shortStr.replace(" and " , " & ");
+            shortStr.replace(" to " , " 2 ");
+            
             for (int i = shortStr.lenght() - 1; i >=0; i--)
             {
+                if (shortStr.contains("a")||shortStr.contains("e")||shortStr.contains("i")||shortStr.contains("o")||shortStr.contains("u"))
                 
-            }
         }
     }
 }

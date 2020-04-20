@@ -43,15 +43,30 @@ public class StringConverter
                 
                 if (englishWord.contains("a")||englishWord.contains("e")englishWord.contains("i")||englishWord.contains("o")||englishWord.contains("u"))
                 {
-                    
+                    if (englishWord.startsWith("a")||englishWord.contains("e")englishWord.contains("i")||englishWord.contains("o")||englishWord.contains("u"))
+                    {
+                        return englishWord + "ay";
+                    }
+                    else
+                    {
+                        return  substring(englishWord.lenght()/2, englishWord.lenght) + substring(0, englishword.length()/2) + "ay";
+                    }
                 }
-                
+                else 
+                {
+                    return englishWord + "ay";
+                }
             }
         }
         
         public static String shorthand(String str)
         {
-            
+            shortStr = str;
+            shortStr.toLowerCase();
+            for (int i = shortStr.lenght() - 1; i >=0; i--)
+            {
+                
+            }
         }
     }
 }
